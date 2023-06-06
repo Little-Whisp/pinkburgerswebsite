@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="https://cdn.discordapp.com/attachments/372804664053334016/1111651748180922448/Pink-Burgers-logo-wit.png" />
+  <title>Pink Burgers</title>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+
+<div class="navbar">
+  <div><a href="#Projects">Home</a></div>
+  <div class="dropdown">
+    <button3  class="dropbtn">Burgers
+      <i class="fa fa-caret-down"></i>
+    </button3>
+    <div class="dropdown-content">
+      <a href="#">Hamburgers</a>
+      <a href="#">Kipburgers</a>
+      <a href="#">overig</a>
+    </div>
+  </div>
+  <div><a href="#Who am I?">Over ons</a></div>
+  <div><a href="#Who am I?">Acties</a></div>
+  <div><a href="#Experience">Recepten</a></div>
+  <div><a href="#Social Media">Reserveren</a></div>
+  <div><a href="#Contact">Contact</a></div>
+  <div><a href="#call"> + 0182 34 28 08</a></div>
+  <input type="text" placeholder="Search..">
+</div>
+
+<body>
+
+<!-- Slideshow container -->
+<header>
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <h1>Welcome bij Pink Burgers!</h1>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="reservation-button">
+      <a href="reserveren.html" class="button">Make a Reservation</a>
+    </div>
+  </div>
+
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</header>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+</script>
+<main>
+
+  <div class="box1">
+    <h3>Hamburgers</h3>
+    <p> <image src="https://cdn.discordapp.com/attachments/372804664053334016/1115614175020986419/hamburger1.png"> </p>
+    <div class="boxtext">
+      <div class="content">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+          popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="box2">
+    <h3>Kipburgers</h3>
+    <p> <image src="https://cdn.discordapp.com/attachments/372804664053334016/1115614174660272148/hamburger4.png"> </p>
+    <div class="boxtext">
+      <div class="content">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+          popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="box3">
+  </div>
+
+
+
+
+  <footer>
+    <div class="footer-content">
+      <div class="contact-info">
+        <h3>Contact Informatie</h3>
+        <p>Adress: Burgerstraat 210, 2821 AT Stolwijk</p>
+        <p>Tel: 0182 34 28 08</p>
+        <p>Mail: info@pinkburgers.nl</p>
+      </div>
+      <div class="footer-links">
+        <h3>Social media</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/explore/tags/pinkburgers/">Pink burgers - Instagram</a></li>
+          <li><a href="https://www.youtube.com/results?search_query=pink+burgers+account">Pink burgers - YouTube</a></li>
+          <li><a href="https://m.facebook.com/Pinkburgeruae/photos/a.515297518615026/1255277114617059/?type=3&wtsid=rdr_0VM5vZ6zPNM1eRtAj&_rdr">Pink burger - Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+</main>
+</body>
+</html>

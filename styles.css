@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+
+
+a{
+    color:white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Acme", sans-serif;
+    background-image: url("https://cdn.discordapp.com/attachments/372804664053334016/1115614175020986419/hamburger1.png");
+    background-size: cover; /* Adjust the background size as needed */
+    /* Add any additional styles for the container */
+    color: white;
+}
+
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding-right: 70px;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    padding-left: 50px;
+    font-family: "Acme", sans-serif;
+    background-color: rgb(235, 5, 121);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: "Acme", sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+/*button starts*/
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: "Acme", sans-serif;
+    background-color: rgb(235, 5, 121);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #555;
+}
+/*button ends*/
